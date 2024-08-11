@@ -1,4 +1,4 @@
-                                  QuickSign License v1.0
+                                  QuickSign License v1.1
                                       12 August 2024
 
 
@@ -16,10 +16,14 @@ You are permitted to:
 - The server software may only be used by the official QuickSign application, without any modifications to either the server or the application.
 - Any modifications, enhancements, or derivative works of the server software are strictly prohibited unless they are merged back into the original QuickSign project and approved by the maintainers.
 
-3. No Warranty
+3. Previous Versions
 
-The software is provided “as is”, without any warranties of any kind, express or implied. The authors and contributors shall not be liable for any damages arising from the use of this software.
+- All conditions outlined in this license apply to every version or commit of this software, whether past, present, or future.
 
-4. Compliance
+4. No Warranty
+
+The software is provided “as is,” without any warranties of any kind, express or implied. The authors and contributors shall not be liable for any damages arising from the use of this software.
+
+5. Compliance
 
 Any violation of these terms will result in the termination of your rights under this license.
