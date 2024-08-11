@@ -9,12 +9,12 @@ This license governs the use, modification, and distribution of the QuickSign se
 
 You are permitted to:
 
-	•	Self-host the QuickSign server software, provided that it is used exclusively within the official, unmodified QuickSign application.
+- Self-host the QuickSign server software, provided that it is used exclusively within the official, unmodified QuickSign application.
 
 2. Restrictions
 
-	•	The server software may only be used by the official QuickSign application, without any modifications to either the server or the application.
-	•	Any modifications, enhancements, or derivative works of the server software are strictly prohibited unless they are merged back into the original QuickSign project and approved by the maintainers.
+- The server software may only be used by the official QuickSign application, without any modifications to either the server or the application.
+- Any modifications, enhancements, or derivative works of the server software are strictly prohibited unless they are merged back into the original QuickSign project and approved by the maintainers.
 
 3. No Warranty
 
