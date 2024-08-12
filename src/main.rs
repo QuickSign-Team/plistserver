@@ -9,7 +9,9 @@ struct PlistQuery {
     fetchurl: String,
 }
 
-static PLIST_TEMPLATE: &str = r#"<?xml version="1.0" encoding="UTF-8"?>
+async fn generate_plist(query: web::Query<PlistQuery>) -> impl Responder {
+    let plist_xml = format!(
+        r#"<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -39,14 +41,12 @@ static PLIST_TEMPLATE: &str = r#"<?xml version="1.0" encoding="UTF-8"?>
         </dict>
     </array>
 </dict>
-</plist>"#;
-
-async fn generate_plist(query: web::Query<PlistQuery>) -> impl Responder {
-    let plist_xml = PLIST_TEMPLATE
-        .replace("{bundleid}", &query.bundleid)
-        .replace("{version}", &query.version)
-        .replace("{name}", &query.name)
-        .replace("{fetchurl}", &query.fetchurl);
+</plist>"#,
+        bundleid = query.bundleid,
+        version = query.version,
+        name = query.name,
+        fetchurl = query.fetchurl
+    );
 
     HttpResponse::Ok()
         .content_type("application/octet-stream")
@@ -63,3 +63,4 @@ async fn main() -> std::io::Result<()> {
     .run()
     .await
 }
+
